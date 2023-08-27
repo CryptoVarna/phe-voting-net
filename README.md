@@ -62,8 +62,15 @@ We reserve 8 bits for each candidate and since we have 3 candidates we get 3 tim
 
 The second one votes for Carlos so we add 1 in the Carlos's space. This of course can be achieved using 3 8 bit unsigned integers but to optimize it we can use a single one and just add
 
-\(2^{numberOfBitsPerVote \times candidateId} = 2^{8 \times 2} = 2^{16} = 65536\)
-or \(1 << (numberOfBitsPerVote \times candidateId)\)
+```math
+2^{numberOfBitsPerVote \times candidateId} = 2^{8 \times 2} = 2^{16} = 65536
+```
+
+or
+
+```math
+ 1 << (numberOfBitsPerVote \times candidateId)
+```
 
 <p align="center">
     <img src="assets/pheVoting-e3.svg" alt="Diagram4">
@@ -75,7 +82,7 @@ The third one votes for Alice again. So at the end we have 2 votes for Alice, no
     <img src="assets/pheVoting-e4.svg" alt="Diagram4">
 </p>
 
-At this point we have the sum of all votes for each candidate encoded into this 24 bit integer. Its value is \( 2 + (1 << 16) = 65538 \).
+At this point we have the sum of all votes for each candidate encoded into this 24 bit integer. Its value is $2 + (1 << 16) = 65538$.
 
 <p align="center">
     <img src="assets/pheVoting-e5.svg" alt="Diagram4">
