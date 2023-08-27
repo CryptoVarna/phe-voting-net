@@ -12,7 +12,9 @@ namespace CryptoVarna.PheVotingNet
 
             public ZkpCommitment()
             {
-
+                A = default!;
+                E = default!;
+                Z = default!;
             }
 
             public ZkpCommitment(List<BigInteger> a, List<BigInteger> e, List<BigInteger> z)

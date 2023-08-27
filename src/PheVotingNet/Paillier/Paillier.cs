@@ -10,7 +10,7 @@ namespace CryptoVarna.PheVotingNet
     /// </summary>
     public partial class Paillier : IDisposable
     {
-        private RandomNumberGenerator _rng;
+        private RandomNumberGenerator _rng = default!;
         private RandomNumberGenerator rng
         {
             get
