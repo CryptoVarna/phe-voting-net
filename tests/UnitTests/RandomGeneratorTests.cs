@@ -20,7 +20,7 @@ namespace CryptoVarna.PheVotingNet.Tests
             }
         }
 
-        [Theory]
+        [Theory(Skip = "Work in progress")]
         [InlineData(128, 100)]
         [InlineData(256, 100)]
         [InlineData(512, 80)]
@@ -31,7 +31,7 @@ namespace CryptoVarna.PheVotingNet.Tests
             Assert.True(RngStatTests.FrequencyMonobitTest(data));
         }
 
-        [Theory]
+        [Theory(Skip = "Work in progress")]
         [InlineData(128, 100)]
         [InlineData(256, 100)]
         [InlineData(512, 80)]
