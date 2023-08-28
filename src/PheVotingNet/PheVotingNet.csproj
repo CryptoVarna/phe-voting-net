@@ -4,11 +4,13 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.0.0</Version>
+    <PackageId>CryptoVarna.PheVotingNet</PackageId>
+    <Product>CryptoVarna.PheVotingNet</Product>
     <Authors>Galin Dinkov</Authors>
     <Company>CryptoVarna</Company>
     <PackageDescription>Privacy Preserving Voting System using Partial Homomorphic Encryption</PackageDescription>
     <RepositoryUrl>https://github.com/CryptoVarna/phe-voting-net.git</RepositoryUrl>
+    <PackageTags>Cryptography;Privacy;Voting System;Homomorphic Encryption</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
-
 </Project>
